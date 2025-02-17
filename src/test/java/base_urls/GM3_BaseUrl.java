@@ -19,8 +19,8 @@ public class GM3_BaseUrl {
             WebDriver driver = new ChromeDriver(new ChromeOptions().addArguments("--headless"));
             driver.get("https://qa-gm3.quaspareparts.com/");
             driver.findElement(By.linkText("Login")).click();
-            driver.findElement(By.id("username")).sendKeys("yasin@clarusway.com");
-            driver.findElement(By.id("password")).sendKeys("123456.Aa" + Keys.ENTER);
+            driver.findElement(By.id("username")).sendKeys("cstm@qualitron.com");
+            driver.findElement(By.id("password")).sendKeys("NuTl2_hwkPcqOl" + Keys.ENTER);
             String gSessionId = driver.manage().getCookieNamed("GSESSIONID").getValue();
             System.out.println(gSessionId);
             driver.quit();

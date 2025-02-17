@@ -14,16 +14,13 @@ public class CountryService extends GM3_BaseUrl {
     @Test
     void getCountries(){
 
-        Response response= RestAssured.given(spec).get("/country");
-
-
+        Response response = RestAssured
+                .given(spec).get("/country/DE");
         System.out.println(response.statusCode());
         System.out.println(response.getStatusLine());
         response.prettyPrint();
 
-        response.then()
-                .statusCode(200)
-                .body("name",Matchers.equalTo("Germany"),
-                        "currncy", Matchers.equalTo("EUR"));
+        response.then().statusCode(200).body("name", Matchers.equalTo("Germany"),
+                "currency",Matchers.equalTo("EUR"));
 }
 }
