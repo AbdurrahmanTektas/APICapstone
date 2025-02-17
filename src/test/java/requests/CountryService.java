@@ -22,5 +22,6 @@ public class CountryService extends GM3_BaseUrl {
 
         response.then().statusCode(200).body("name", Matchers.equalTo("Germany"),
                 "currency",Matchers.equalTo("EUR"));
+
 }
 }
