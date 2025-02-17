@@ -29,6 +29,5 @@ public class GM3_BaseUrl {
                 .setBaseUri("https://qa-gm3.quaspareparts.com/a3m/auth/api")
                 .addHeader("Cookie", "GSESSIONID=" + gSessionId)
                 .build();
-
     }
 }
