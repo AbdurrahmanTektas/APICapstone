@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="All Test Suite">
+    <test verbose="2" preserve-order="true" name="C:/Users/tektas/IdeaProjects/DE04_CapstoneAPI/src/test/java/requests">
+        <classes>
+            <class name="requests.CompanyGroup">
+            </class>
+            <class name="requests.CountryService">
+            </class>
+            <class name="requests.DepartmentServices">
+            </class>
+            <class name="requests.MembershipServices">
+            </class>
+            <class name="requests.MembershipTypeServices">
+            </class>
+            <class name="requests.OrganizationStatusServices">
+            </class>
+            <class name="requests.PemissionsService">
+            </class>
+            <class name="requests.RemoteUnits">
+            </class>
+            <class name="requests.RolleService">
+            </class>
+            <class name="requests.UserGroupServicesZeynep">
+            </class>
+            <class name="requests.UserGroupTypeServices_Teams">
+            </class>
+            <class name="requests.UserPrivateTokenServices">
+            </class>
+            <class name="requests.UserServices">
+            </class>
+            <class name="requests.UserServicesFethi">
+            </class>
+            <class name="requests.UserStatusServices">
+            </class>
+        </classes>
+    </test>
+</suite>
