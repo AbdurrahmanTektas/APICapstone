@@ -47,9 +47,12 @@
         <artifactId>jackson-databind</artifactId>
         <version>2.18.2</version>
     </dependency>
+    <dependency>
+        <groupId>io.qameta.allure</groupId>
+        <artifactId>allure-testng</artifactId>
+        <version>2.29.0</version>
+    </dependency>
 </dependencies>
-
-
     <build>
         <plugins>
             <!-- Surefire plugin used to run tests in parallel -->
@@ -67,9 +70,9 @@
                     <argLine>-XX:MaxPermSize=256m</argLine>
                     <argLine>-Dfile.encoding=UTF-8</argLine>
                     <useFile>false</useFile>
-                    <includes>
-                        <include>RolleService.java</include>
-                    </includes>
+                    <suiteXmlFiles>
+                        <suiteXmlFile>regression.xml</suiteXmlFile>
+                    </suiteXmlFiles>
                     <testFailureIgnore>true</testFailureIgnore>
                 </configuration>
             </plugin>
