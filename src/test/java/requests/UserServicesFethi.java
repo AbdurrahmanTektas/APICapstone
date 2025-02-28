@@ -85,7 +85,7 @@ public class UserServicesFethi extends GM3_BaseUrl {
 
     @Test(priority = 5)
     void deleteUser() {
-        Response response = given(spec).delete("/user-group/"+userId);
+        Response response = given(spec).delete("v1/organization/1724253527891397/user/"+userId);
         System.out.println("Response Body:");
         response.prettyPrint();
 
