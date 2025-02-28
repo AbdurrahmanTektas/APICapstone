@@ -86,8 +86,6 @@ public class UserServices extends GM3_BaseUrl {
 
         response.then()
                 .statusCode(200);
-        assertEquals(response.statusCode(), 200);
-        assertEquals(response.statusCode(), 200);
     }
 
     @Test(priority = 3)
@@ -103,6 +101,7 @@ public class UserServices extends GM3_BaseUrl {
         Map mp = new ObjectMapper().readValue(payload, Map.class);
         mp.put("email", Faker.instance().internet().emailAddress());
         mp.put("username", Faker.instance().name().username());
+        mp.put("id", userId);
         System.out.println("mp = " + mp);
 
 
@@ -198,7 +197,7 @@ public class UserServices extends GM3_BaseUrl {
     @Test(priority = 6)
     void userServicesDeletId() {
 
-        Response response = RestAssured.given(spec).delete("v1/organization/1724253527891397/user/971");
+        Response response = RestAssured.given(spec).delete("v1/organization/1724253527891397/user/"+userId);
 
         System.out.println(response.statusCode());
         System.out.println(response.getStatusLine());
